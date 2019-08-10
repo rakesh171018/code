@@ -1,0 +1,222 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //Develop a billing statement for a store/restaurant 
+    // Define variables 
+    double donut, bagel, burrito, sandwhich, omelet, coffee, cappachino, smootie, water, spirit, total, tax;
+    char answerType;
+    bagel = 2.50;
+    burrito = 3.50;
+    donut = 1.00;
+    sandwhich = 3.50;
+    omelet = 1.25;
+    coffee = 1.50;
+    cappachino = 2.00;
+    smootie = 3.25;
+    water = 0.99;
+    spirit = 1.00;
+    total = 0.00;
+    tax = 6.25;
+    cout << "Welcome to Junelle's Cafe" << endl;
+    // Introduction to my cafe
+
+    //Customer knows the options before hand 
+    //Customer enters yes (y) or no (n) 
+    cout << "Enter a y (yes) or no (n) for every question asked." << endl;
+
+//Ask user if they want a bagel 
+    cout << "Would you like to buy a bagel for $2.50?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A bagel has been added to your order. Your total is " << total + bagel << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item2
+    cout << "Would you like to buy a donut for $1.00?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A donut has been added to your order. Your total is " << total + donut+bagel << endl;
+
+    }
+
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item3 
+    cout << "Would you like to buy a omelet for $1.25?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A omelet has been added to your order. Your total is " << total + donut + bagel+ omelet << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item 4
+    cout << "Would you like to buy a burrito for $2.50?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A burrito has been added to your order. Your total is " << total + donut + bagel
+            + omelet + burrito << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+
+//item 5 
+    cout << "Would you like to buy a sandwhich for $2.50?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A sandwhich has been added to your order. Your total is " << total + donut + bagel
+            + omelet+ burrito+sandwhich << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item 6
+    cout << "Would you like to buy a coffee for $1.50?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A coffee has been added to your order. Your total is " << total + donut + bagel 
+            + omelet+ burrito + sandwhich + coffee<< endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+
+//item 7 
+    cout << "Would you like to buy a cappachino for $2.00?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A cappachino has been added to your order. Your total is " << total + donut + bagel 
+            + omelet + burrito + sandwhich + coffee+ cappachino << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item 8
+    cout << "Would you like to buy a water for $0.99?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A water has been added to your order. Your total is " << total + donut + bagel
+            + omelet + burrito + sandwhich + coffee + cappachino + water << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item 9 
+    cout << "Would you like to buy a spirit for $1.00?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A spirit has been added to your order. Your total is " << total + donut + bagel
+            + omelet + burrito + sandwhich + coffee + cappachino + water + spirit<< endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+//item 10 
+    cout << "Would you like to buy a smootie for $1.25?:";
+    cin >> answerType;
+
+    if (answerType == 'y')
+
+    {
+
+        cout << "A smootie has been added to your order. Your total is " << total + donut + bagel 
+            + omelet + burrito + sandwhich + coffee + cappachino + water + spirit + smootie << endl;
+
+    }
+
+    else if (answerType == 'n')
+
+    {
+        cout << "Your total is " << total << endl;
+
+    }
+
+    cout << "Thank you for visiting Junelle's Cafe" << endl;
+    while (1);
+    return 0;
+}
